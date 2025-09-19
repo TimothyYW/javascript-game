@@ -31,3 +31,9 @@ header h1 {
     padding: 15px 20px;
     font-family: Share Tech, sans-serif;
 }
+
+.user-score, .computer-score {
+    font-size: 18px;
+    color: black;
+    padding: 2px 10px;
+}
