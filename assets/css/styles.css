@@ -66,5 +66,16 @@ header h1 {
 
 .options {
     text-align: center;
-    margin-top: 30px;
+    margin: 50px 0;
 }
+
+.option {
+    display: inline-block;
+    padding: 10px;
+    margin: 0 20px;
+}
+
+.option:hover {
+    cursor: pointer;
+}
+
