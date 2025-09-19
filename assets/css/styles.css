@@ -20,3 +20,14 @@ header h1 {
     font-family: Bitcount Ink, sans-serif;
 }
 
+.scoreboard {
+    border: 3px solid black;
+    width: 200px;
+    margin: 20px auto;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 4px;
+    padding: 15px 20px;
+    font-family: Share Tech, sans-serif;
+}
