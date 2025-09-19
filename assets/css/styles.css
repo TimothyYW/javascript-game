@@ -53,3 +53,18 @@ header h1 {
     top: 20px;
     right: -25px;
 }
+
+.result {
+    font-size: 40px;
+    color: black;
+}
+
+.result > p {
+    text-align: center;
+    font-family: Bitcount Ink, sans-serif;
+}
+
+.options {
+    text-align: center;
+    margin-top: 30px;
+}
