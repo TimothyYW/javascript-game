@@ -30,10 +30,26 @@ header h1 {
     border-radius: 4px;
     padding: 15px 20px;
     font-family: Share Tech, sans-serif;
+    position: relative;
 }
 
 .user-score, .computer-score {
+    background-color: lightpink;
     font-size: 18px;
     color: black;
     padding: 2px 10px;
+}
+
+#human {
+   float: left;
+   position:absolute;
+   top: 20px;
+   left: -25px;
+}
+
+#bot {
+    float: right;
+    position:absolute;
+    top: 20px;
+    right: -25px;
 }
