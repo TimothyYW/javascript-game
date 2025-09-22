@@ -79,3 +79,9 @@ header h1 {
     cursor: pointer;
 }
 
+#action-message {
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    font-family: Share Tech, sans-serif;
+}
