@@ -64,6 +64,12 @@ header h1 {
     font-family: Bitcount Ink, sans-serif;
 }
 
+#welcome, #welcome-text {
+    text-align: center;
+    font-family: Share Tech, sans-serif;
+    color: black;
+}
+
 .options {
     text-align: center;
     margin: 50px 0;
