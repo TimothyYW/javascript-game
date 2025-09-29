@@ -21,8 +21,23 @@ getComputerChoice();
 
 function game(userChoice) {
     const computerChoice = getComputerChoice();
-    console.log(computerChoice)
-    console.log("User choice => " + userChoice);
+    switch (userChoice + computerChoice) {
+        case "rockscissor":
+        case "paperrock":
+        case "scissorpaper":
+            console.log("User wins");
+            break;
+        case "rockpaper":
+        case "paperscissor":
+        case "scissorrock":
+            console.log("Computer wins");
+            break;
+        case "rockrock":
+        case "paperpaper":
+        case "scissorscissor":
+            console.log("It's a draw");
+            break;
+    }
 }
 
 game("rock")
