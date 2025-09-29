@@ -17,19 +17,22 @@ function getComputerChoice() {
     return options[randomNumber];
 }
 
-function win(user, computer) {
+function win(userChoice, computerChoice) {
     userScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     result_div.innerHTML = `${user} beats ${computer}. You win!`;
 }
 
-function lose() {
-    console.log("user lose");
+function lose(userChoice, computerChoice) {
+    computerScore++;
+    userScore_span.innerHTML = userScore;
+    computerScore_span.innerHTML = computerScore;
+    result_div.innerHTML = `${user} beats ${computer}. You lose!`;
 }
 
-function draw() {
-    console.log("it's a draw");
+function draw(userChoice, computerChoice) {
+    result_div.innerHTML = `${user} beats ${computer}. It's a draw!`;
 }
 
 function game(userChoice) {
