@@ -17,7 +17,17 @@ function getComputerChoice() {
     return options[randomNumber];
 }
 
-getComputerChoice();
+function win() {
+    console.log("user win");
+}
+
+function lose() {
+    console.log("user lose");
+}
+
+function draw() {
+    console.log("it's a draw");
+}
 
 function game(userChoice) {
     const computerChoice = getComputerChoice();
@@ -25,17 +35,17 @@ function game(userChoice) {
         case "rockscissor":
         case "paperrock":
         case "scissorpaper":
-            console.log("User wins");
+            win();
             break;
         case "rockpaper":
         case "paperscissor":
         case "scissorrock":
-            console.log("Computer wins");
+            lose();
             break;
         case "rockrock":
         case "paperpaper":
         case "scissorscissor":
-            console.log("It's a draw");
+            draw();
             break;
     }
 }
