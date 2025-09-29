@@ -17,8 +17,11 @@ function getComputerChoice() {
     return options[randomNumber];
 }
 
-function win() {
-    console.log("user win");
+function win(user, computer) {
+    userScore++;
+    userScore_span.innerHTML = userScore;
+    computerScore_span.innerHTML = computerScore;
+    result_div.innerHTML = `${user} beats ${computer}. You win!`;
 }
 
 function lose() {
