@@ -9,7 +9,7 @@ const result_div = document.querySelector(".result");
 
 const rock_div = document.getElementById("rock");
 const paper_div = document.getElementById("paper");
-const scissors_div = document.getElementById("scissor");
+const scissor_div = document.getElementById("scissor");
 
 function getComputerChoice() {
     const options = ['rock', 'paper', 'scissor'];
