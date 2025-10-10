@@ -21,18 +21,18 @@ function win(userChoice, computerChoice) {
     userScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-    result_div.innerHTML = `${user} beats ${computer}. You win!`;
+    result_div.innerHTML = `${userChoice} beats ${computerChoice}. You win!`;
 }
 
 function lose(userChoice, computerChoice) {
     computerScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-    result_div.innerHTML = `${user} beats ${computer}. You lose!`;
+    result_div.innerHTML = `${userChoice} beats ${computerChoice}. You lose!`;
 }
 
 function draw(userChoice, computerChoice) {
-    result_div.innerHTML = `${user} beats ${computer}. It's a draw!`;
+    result_div.innerHTML = `${userChoice} beats ${computerChoice}. It's a draw!`;
 }
 
 function game(userChoice) {
