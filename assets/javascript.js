@@ -41,18 +41,15 @@ function game(userChoice) {
         case "rockscissor":
         case "paperrock":
         case "scissorpaper":
-            win();
+            win(userChoice, computerChoice);
             break;
         case "rockpaper":
         case "paperscissor":
         case "scissorrock":
-            lose();
+            lose(userChoice, computerChoice);
             break;
-        case "rockrock":
-        case "paperpaper":
-        case "scissorscissor":
-            draw();
-            break;
+        default:
+            draw(userChoice, computerChoice);
     }
 }
 
