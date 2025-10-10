@@ -5,7 +5,7 @@ const userScore_span = document.getElementById("human-score");
 const computerScore_span = document.getElementById("bot-score");
 
 const scoreBoard_div = document.querySelector(".scoreboard");
-const result_div = document.querySelector(".result");
+const result_div = document.querySelector(".result p");
 
 const rock_div = document.getElementById("rock");
 const paper_div = document.getElementById("paper");
@@ -19,20 +19,18 @@ function getComputerChoice() {
 
 function win(userChoice, computerChoice) {
     userScore++;
-    userScore_span.innerHTML = userScore;
-    computerScore_span.innerHTML = computerScore;
-    result_div.innerHTML = `${userChoice} beats ${computerChoice}. You win!`;
+    userScore_span.textContent = userScore;
+    result_div.textContent = `${userChoice} beats ${computerChoice}. You win! 🏆`;
 }
 
 function lose(userChoice, computerChoice) {
     computerScore++;
-    userScore_span.innerHTML = userScore;
-    computerScore_span.innerHTML = computerScore;
-    result_div.innerHTML = `${userChoice} beats ${computerChoice}. You lose!`;
+    computerScore_span.textContent = computerScore;
+    result_div.textContent = `${computerChoice} beats ${userChoice}. You lose! 😢`;
 }
 
 function draw(userChoice, computerChoice) {
-    result_div.innerHTML = `${userChoice} beats ${computerChoice}. It's a draw!`;
+    result_div.textContent = `${userChoice} equals ${computerChoice}. It's a draw! 🤝`;
 }
 
 function game(userChoice) {
