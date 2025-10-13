@@ -4,7 +4,6 @@ let computerScore = 0;
 const userScore_span = document.getElementById("human-score");
 const computerScore_span = document.getElementById("bot-score");
 
-const scoreBoard_div = document.querySelector(".scoreboard");
 const result_div = document.querySelector(".result p");
 
 const rock_div = document.getElementById("rock");
@@ -12,9 +11,9 @@ const paper_div = document.getElementById("paper");
 const scissor_div = document.getElementById("scissor");
 
 function getComputerChoice() {
-    const options = ['rock', 'paper', 'scissor'];
+    const choices = ["rock", "paper", "scissor"];
     const randomNumber = Math.floor(Math.random() * 3);
-    return options[randomNumber];
+    return choices[randomNumber];
 }
 
 function win(userChoice, computerChoice) {
@@ -52,17 +51,9 @@ function game(userChoice) {
 }
 
 function main() {
-    rock_div.addEventListener('click', function() {
-        game("rock");
-    })
-
-    paper_div.addEventListener('click', function() {
-        game("paper");
-    })
-
-    scissors_div.addEventListener('click', function() {
-        game("scissor");
-    })
+    rock_div.addEventListener("click", () => game("rock"));
+    paper_div.addEventListener("click", () => game("paper"));
+    scissor_div.addEventListener("click", () => game("scissor"));
 }
 
 main();
