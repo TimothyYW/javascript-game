@@ -2,9 +2,9 @@
 
 This site will be working as the rock paper scissor game, where user will be up against bot in rock paper scissor contest.
 
-![Screenshot for rock paper scissor]()
+![Screenshot for rock paper scissor](assets/images/screenshot/screenshot-mock-up-test.png)
 
-[Link to deployed site]()
+[Link to deployed site](https://timothyyw.github.io/javascript-game/)
 
 # Feature
 
