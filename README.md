@@ -57,3 +57,7 @@ Wave is to check if there is color contrast.
 tutorial to create the game
 
 https://www.youtube.com/watch?v=jaVNP3nIAv0 
+
+favicon
+
+https://www.flaticon.com/free-icon/rock-paper-scissors_6851302
