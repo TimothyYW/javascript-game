@@ -36,6 +36,17 @@ Right below showing the message encouraging player to make their move.
 
 ![Screenshot make your move](assets/images/screenshot/screenshot-message.png)
 
+# UX
+
+The game just like the name focused on choosing rock paper or scissor, while the opponent will have similar choice. 
+For the font for title I am using Share tech to give the arcade feeling for the user, while for the Welcoming message I am using Bitcount ink to keep it simple and easy to read.
+
+![Screenshot for the title](assets/images/screenshot/screenshot-index.png)
+
+Here is the sketch of the game with using Balsemig:
+
+![Screenshot for balsemig]()
+
 ## Technologies utilized
 
 HTML is used for write the code and to built the website.
