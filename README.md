@@ -43,9 +43,9 @@ For the font for title I am using Share tech to give the arcade feeling for the 
 
 ![Screenshot for the title](assets/images/screenshot/screenshot-index.png)
 
-Here is the sketch of the game with using Balsemig:
+Here is the sketch of the game with using Wireframe.cc:
 
-![Screenshot for balsemig]()
+![Screenshot for wireframe.cc](assets/images/screenshot/screenshot-wireframe.png)
 
 ## Technologies utilized
 
@@ -61,7 +61,7 @@ Github is where the code will be stored.
 
 Google Chrome Lighthouse is used to check the website performance and accessibility.
 
-Balsemig is used to make the sketch wireframes for the website strucutres.
+Wireframe.cc is used to make the sketch wireframes for the website strucutres.
 
 W3C used to validated and ensured there are no errors on HTML code.
 
@@ -102,10 +102,14 @@ For cloning repository, can be done as followed:
 
 # Credits
 
-tutorial to create the game
+Tutorial to create the game
 
 https://www.youtube.com/watch?v=jaVNP3nIAv0 
 
-favicon
+Favicon
 
 https://www.flaticon.com/free-icon/rock-paper-scissors_6851302
+
+Wireframe
+
+https://wireframe.cc/
