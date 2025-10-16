@@ -52,6 +52,37 @@ Jigsaw is to ensure that there are no error on the CSS code.
 
 Wave is to check if there is color contrast.
 
+# Deployment
+
+To deploy the project please follow step below:
+    
+    1. Log in to Github.
+    2. Go to setting right next to Insight.
+    3. Within setting navigate to Pages below Codespaces.
+    4. Under the Branch, change from "none" to "main".
+    5. Click "Save".
+    6. Wait for few minute.
+    7. A link will be provided.
+
+## Version Control
+
+To use version control utilizing the git command:
+
+    1. Git add . will create a file with the new code that has been added
+    2. Git commit is to commit the changes
+    3. Git push is to add the version of the file in to the repository
+
+After creating new version of the file it will be commited, which means it can be viewed and compared previous and newer version.
+
+## Cloning Repository 
+
+For cloning repository, can be done as followed:
+
+    1. Open github repository
+    2. Above file open drop down menu code copy URL, there are three version HTTP, SSH, and GitCLI, all version work on cloning.
+    3. Open Git Bash.
+    4. Type Git clone URL
+
 # Credits
 
 tutorial to create the game
