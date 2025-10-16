@@ -8,27 +8,33 @@ This site will be working as the rock paper scissor game, where user will be up 
 
 # Feature
 
+## Logo
+
+The logo or Favicon show casing the three options for the rock paper scissor game.
+
+![Logo](assets/images/logo/favicon.png)
+
 ## Index
 
 Within index there is a welcoming message for the user to the rock paper scissor game.
 
-![Screenshot for index]()
+![Screenshot for index](assets/images/screenshot/screenshot-index.png)
 
 ## Score
 
 This is scoring system to count the points scored by player and computer.
 
-![Screenshot for scoring system]()
+![Screenshot for scoring system](assets/images/screenshot/Screenshot-scoring-system.png)
 
 ## Game
 
 The game feature three hand sign starting from rock paper and scissor, which player can choose. While the computer will be choosing randomly to compete with player to see who would win.
 
-![Screenshot for game]()
+![Screenshot for game](assets/images/screenshot/Screenshot-the-game.png)
 
 Right below showing the message encouraging player to make their move.
 
-![Screenshot make your move]()
+![Screenshot make your move](assets/images/screenshot/screenshot-message.png)
 
 ## Technologies utilized
 
