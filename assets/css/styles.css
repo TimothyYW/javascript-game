@@ -19,7 +19,7 @@ header h1 {
     text-align: center;
     font-family: Bitcount Ink, sans-serif;
 }
-
+/* Scoreboard */
 .scoreboard {
     border: 3px solid black;
     width: 200px;
@@ -69,7 +69,7 @@ header h1 {
     font-family: Share Tech, sans-serif;
     color: black;
 }
-
+/* Options */
 .options {
     text-align: center;
     margin: 50px 0;
