@@ -49,7 +49,21 @@ Here is the sketch of the game with using Wireframe.cc:
 
 # Testing
 
+Here is the test result for index.html:
 
+![Screenshot w3c result](assets/images/screenshot/screenshot-w3c-result.png)
+
+Here is the test result for CSS:
+
+![Screenshot jigsaw css result](assets/images/screenshot/screenshot-jigsaw-css-result.png)
+
+Next is lighthouse devtool ensure the website`s level of performance, accessabllity, best practice, and SEO. The score of the website can be seen below:
+
+![Screenshot lighthouse devtool](assets/images/screenshot/screenshot-lighthouse-devtool.png)
+
+The wave is an evaluation tool to ensure that there are no contrast among colors, as can be seen below the result:
+
+![Screenshot wave test](assets/images/screenshot/screenshot-wave.png)
 
 # Technologies utilized
 
