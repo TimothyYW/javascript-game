@@ -1,14 +1,14 @@
 let userScore = 0;
 let computerScore = 0;
 
-const userScore_span = document.getElementById("human-score");
-const computerScore_span = document.getElementById("bot-score");
+const userScoreSpan = document.getElementById("human-score");
+const computerScoreSpan = document.getElementById("bot-score");
 
-const result_div = document.querySelector(".result p");
+const resultDiv = document.querySelector(".result p");
 
-const rock_div = document.getElementById("rock");
-const paper_div = document.getElementById("paper");
-const scissor_div = document.getElementById("scissor");
+const rockDiv = document.getElementById("rock");
+const paperDiv = document.getElementById("paper");
+const scissorDiv = document.getElementById("scissor");
 
 function getComputerChoice() {
     const choices = ["rock", "paper", "scissor"];
@@ -18,18 +18,18 @@ function getComputerChoice() {
 
 function win(userChoice, computerChoice) {
     userScore++;
-    userScore_span.textContent = userScore;
-    result_div.textContent = `${userChoice} beats ${computerChoice}. You win! 🏆`;
+    userScoreSpan.textContent = userScore;
+    resultDiv.textContent = `${userChoice} beats ${computerChoice}. You win! 🏆`;
 }
 
 function lose(userChoice, computerChoice) {
     computerScore++;
-    computerScore_span.textContent = computerScore;
-    result_div.textContent = `${computerChoice} beats ${userChoice}. You lose! 😢`;
+    computerScoreSpan.textContent = computerScore;
+    resultDiv.textContent = `${computerChoice} beats ${userChoice}. You lose! 😢`;
 }
 
 function draw(userChoice, computerChoice) {
-    result_div.textContent = `${userChoice} equals ${computerChoice}. It's a draw! 🤝`;
+    resultDiv.textContent = `${userChoice} equals ${computerChoice}. It's a draw! 🤝`;
 }
 
 function game(userChoice) {
@@ -51,9 +51,9 @@ function game(userChoice) {
 }
 
 function main() {
-    rock_div.addEventListener("click", () => game("rock"));
-    paper_div.addEventListener("click", () => game("paper"));
-    scissor_div.addEventListener("click", () => game("scissor"));
+    rockDiv.addEventListener("click", () => game("rock"));
+    paperDiv.addEventListener("click", () => game("paper"));
+    scissorDiv.addEventListener("click", () => game("scissor"));
 }
 
 main();
