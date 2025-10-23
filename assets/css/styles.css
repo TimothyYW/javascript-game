@@ -29,8 +29,8 @@ footer {
 
 .creator {
     text-align: center;
-    font-size: 25px;
-    padding: 70px;
+    font-size: 20px;
+    padding: 50px;
     font-family: Share Tech, sans-serif;
     color: black;
 }
@@ -105,6 +105,34 @@ footer {
     font-size: 25px;
     color: black;
     font-family: Share Tech, sans-serif;
+}
+/* Dialog style */
+
+dialog {
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 20px;
+  font-family: Share Tech, sans-serif;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+dialog::backdrop {
+  background-color: hsl(250, 100%, 50%, 0.25);
+}
+
+#show-rules {
+    display: block;
+    margin: 12px auto; 
+    padding: 8px 14px;
+    font-family: Share Tech, sans-serif;
+    border: 2px solid black;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
 }
 
 @media (max-width: 300px) {
