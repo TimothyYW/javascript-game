@@ -10,6 +10,10 @@ const rockDiv = document.getElementById("rock");
 const paperDiv = document.getElementById("paper");
 const scissorDiv = document.getElementById("scissor");
 
+const rulesDialog = document.getElementById("rules-dialog");
+const showRulesButton = document.getElementById("show-rules");
+const closeRulesButton = document.getElementById("close-rules");
+
 function getComputerChoice() {
     const choices = ["rock", "paper", "scissor"];
     const randomNumber = Math.floor(Math.random() * 3);
@@ -51,6 +55,15 @@ function game(userChoice) {
 }
 
 function main() {
+    
+showRulesButton.addEventListener("click", () => {
+  rulesDialog.showModal();
+});
+
+
+closeRulesButton.addEventListener("click", () => {
+  rulesDialog.close();
+});
     rockDiv.addEventListener("click", () => game("rock"));
     paperDiv.addEventListener("click", () => game("paper"));
     scissorDiv.addEventListener("click", () => game("scissor"));
