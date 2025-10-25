@@ -128,6 +128,10 @@ Tutorial to create the game
 
 https://www.youtube.com/watch?v=jaVNP3nIAv0 
 
+Tutorial to create HTML dialog
+
+https://blog.webdevsimplified.com/2023-04/html-dialog/
+
 Favicon
 
 https://www.flaticon.com/free-icon/rock-paper-scissors_6851302
