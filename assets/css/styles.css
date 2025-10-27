@@ -94,10 +94,14 @@ footer {
     display: inline-block;
     padding: 10px;
     margin: 0 20px;
+    transition: all 0.3s ease;
 }
 
 .option:hover {
     cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
 }
 
 #action-message {
