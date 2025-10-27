@@ -2,7 +2,7 @@
 
 This site will be working as the rock paper scissor game, where user will be up against bot in rock paper scissor contest.
 
-![Screenshot for rock paper scissor](assets/images/screenshot/screenshot-mock-up-test.png)
+![Screenshot for rock paper scissor](assets/images/screenshot/)
 
 [Link to deployed site](https://timothyyw.github.io/javascript-game/)
 
@@ -40,6 +40,8 @@ Right below showing the message encouraging player to make their move.
 
 The game just like the name focused on choosing rock paper or scissor, while the opponent will have similar choice. 
 For the font for title I am using Share tech to give the arcade feeling for the user, while for the Welcoming message I am using Bitcount ink to keep it simple and easy to read.
+
+Once user hover on one of three options that are available, user will be able to see shadow to ensure they are hover the option that they are want.
 
 ![Screenshot for the title](assets/images/screenshot/screenshot-index.png)
 
