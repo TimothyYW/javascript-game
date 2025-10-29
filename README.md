@@ -137,3 +137,9 @@ https://www.flaticon.com/free-icon/rock-paper-scissors_6851302
 Wireframe
 
 https://wireframe.cc/
+
+Code for opening and closing instruction
+
+https://github.com/IuliiaKonovalova/flash_cards/blob/main/assets/js/menu.js
+
+I would like to thank you to Ms Julia Konovalova for her guidance
