@@ -40,23 +40,23 @@ function getComputerChoice() {
     return choices[randomNumber];
 }
 
-function win(userChoice, computerChoice) {
+function winCondition(userChoice, computerChoice) {
     userScore++;
     userScoreSpan.textContent = userScore;
     resultDiv.textContent = `${userChoice} beats ${computerChoice}. You win! 🏆`;
 }
 
-function lose(userChoice, computerChoice) {
+function loseCondition(userChoice, computerChoice) {
     computerScore++;
     computerScoreSpan.textContent = computerScore;
     resultDiv.textContent = `${computerChoice} beats ${userChoice}. You lose! 😢`;
 }
 
-function draw(userChoice, computerChoice) {
+function drawCondition(userChoice, computerChoice) {
     resultDiv.textContent = `${userChoice} equals ${computerChoice}. It's a draw! 🤝`;
 }
 
-function game(userChoice) {
+function gameFunction(userChoice) {
     if (!gameActive) return;
     const computerChoice = getComputerChoice();
     switch (userChoice + computerChoice) {
@@ -90,7 +90,7 @@ function checkEndGame() {
     }
 }
 
-function endGame(winner) {
+function endGameCondition(winner) {
     gameActive = false;
     resultDiv.textContent = `${winner} reached 10 points. ${winner} wins the game!`;
     createRestartButton();
