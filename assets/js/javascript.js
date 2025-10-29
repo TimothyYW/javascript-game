@@ -1,3 +1,5 @@
+// Rock paper scissor game //
+
 let userScore = 0;
 let computerScore = 0;
 
@@ -19,10 +21,10 @@ const actionMessage = document.getElementById("action-message");
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  //Open Instructions for the quiz
+  //Open Instructions for the game
   btnOpenModal.addEventListener('click', openModal);
 
-  //Close instructions for the quiz
+  //Close instructions for the game
   btnCloseModal.addEventListener('click', closeModal);
 
   overlay.addEventListener('click', closeModal);
@@ -34,11 +36,19 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// Bot function
+
 function getComputerChoice() {
     const choices = ["rock", "paper", "scissor"];
     const randomNumber = Math.floor(Math.random() * 3);
     return choices[randomNumber];
 }
+
+// Win, lose, and draw condition
+
+/**
+ * Win condition for player and computer 
+ */
 
 function winCondition(userChoice, computerChoice) {
     userScore++;
@@ -46,15 +56,25 @@ function winCondition(userChoice, computerChoice) {
     resultDiv.textContent = `${userChoice} beats ${computerChoice}. You win! 🏆`;
 }
 
+/**
+ * Lose condition for player and computer 
+ */
+
 function loseCondition(userChoice, computerChoice) {
     computerScore++;
     computerScoreSpan.textContent = computerScore;
     resultDiv.textContent = `${computerChoice} beats ${userChoice}. You lose! 😢`;
 }
 
+/**
+ * Draw condition for player and computer 
+ */
+
 function drawCondition(userChoice, computerChoice) {
     resultDiv.textContent = `${userChoice} equals ${computerChoice}. It's a draw! 🤝`;
 }
+
+// Game functional 
 
 function gameFunction(userChoice) {
     if (!gameActive) return;
@@ -82,6 +102,12 @@ function gameFunction(userChoice) {
     checkEndGame();
 }
 
+// End game condition
+
+/**
+ * End game if the player or the computer reach 10 points
+ */
+
 function checkEndGame() {
     if (userScore >= 10) {
         endGame("You");
@@ -90,11 +116,17 @@ function checkEndGame() {
     }
 }
 
+/**
+ * End game once endgame condition met 
+ */
+
 function endGameCondition(winner) {
     gameActive = false;
     resultDiv.textContent = `${winner} reached 10 points. ${winner} wins the game!`;
     createRestartButton();
 }
+
+// Restard button appear function
 
 function createRestartButton() {
     if (document.getElementById("restart-button")) return;
@@ -109,6 +141,8 @@ function createRestartButton() {
     restartButton.addEventListener("click", resetGame);
 }
 
+// Reset game after restart button click
+
 function resetGame() {
     userScore = 0;
     computerScore = 0;
@@ -118,6 +152,8 @@ function resetGame() {
     actionMessage.innerHTML = "Make your move!";
     gameActive = true;
 }
+
+// Add eventlistener
 
 function main() {
     
