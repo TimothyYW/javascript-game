@@ -67,10 +67,6 @@ The wave is an evaluation tool to ensure that there are no contrast among colors
 
 ![Screenshot wave test](assets/images/screenshot/screenshot-wave.png)
 
-**Purpose**|**Method**|**Expected**|**Result**
-:-----:|:-----:|:-----:|:-----:|
-
-
 # Technologies utilized
 
 HTML is used for write the code and to built the website.
