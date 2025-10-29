@@ -17,6 +17,23 @@ const showRulesButton = document.getElementById("show-rules");
 const closeRulesButton = document.getElementById("close-rules");
 const actionMessage = document.getElementById("action-message");
 
+document.addEventListener('DOMContentLoaded', function () {
+
+  //Open Instructions for the quiz
+  btnOpenModal.addEventListener('click', openModal);
+
+  //Close instructions for the quiz
+  btnCloseModal.addEventListener('click', closeModal);
+
+  overlay.addEventListener('click', closeModal);
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+      closeModal();
+    }
+  });
+});
+
 function getComputerChoice() {
     const choices = ["rock", "paper", "scissor"];
     const randomNumber = Math.floor(Math.random() * 3);
