@@ -83,15 +83,15 @@ function gameFunction(userChoice) {
         case "rockscissor":
         case "paperrock":
         case "scissorpaper":
-            win(userChoice, computerChoice);
+            winCondition(userChoice, computerChoice);
             break;
         case "rockpaper":
         case "paperscissor":
         case "scissorrock":
-            lose(userChoice, computerChoice);
+            loseCondition(userChoice, computerChoice);
             break;
         default:
-            draw(userChoice, computerChoice);
+            drawCondition(userChoice, computerChoice);
     }
 
     const totalMoves = userScore + computerScore + (userChoice === computerChoice ? 1 : 0);
@@ -110,9 +110,9 @@ function gameFunction(userChoice) {
 
 function checkEndGame() {
     if (userScore >= 10) {
-        endGame("You");
+        endGameCondition("You");
     } else if (computerScore >= 10) {
-        endGame("Computer");
+        endGameCondition("Computer");
     }
 }
 
@@ -148,7 +148,8 @@ function resetGame() {
     computerScore = 0;
     userScoreSpan.textContent = userScore;
     computerScoreSpan.textContent = computerScore;
-    resultDiv.textContent = "";
+    // Restore initial result prompt
+    resultDiv.textContent = "Choose";
     actionMessage.innerHTML = "Make your move!";
     gameActive = true;
 }
@@ -165,9 +166,9 @@ showRulesButton.addEventListener("click", () => {
 closeRulesButton.addEventListener("click", () => {
   rulesDialog.close();
 });
-    rockDiv.addEventListener("click", () => game("rock"));
-    paperDiv.addEventListener("click", () => game("paper"));
-    scissorDiv.addEventListener("click", () => game("scissor"));
+        rockDiv.addEventListener("click", () => gameFunction("rock"));
+        paperDiv.addEventListener("click", () => gameFunction("paper"));
+        scissorDiv.addEventListener("click", () => gameFunction("scissor"));
 }
 
 main();
