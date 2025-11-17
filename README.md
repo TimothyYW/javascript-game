@@ -49,6 +49,10 @@ Here is the sketch of the game with using Wireframe.cc:
 
 ![Screenshot for wireframe.cc](assets/images/screenshot/screenshot-wireframe.png)
 
+# Future plan and update
+
+There are none during the time this project being made.
+
 # Testing
 
 Here is the test result for index.html:
@@ -66,6 +70,16 @@ Next is lighthouse devtool ensure the website`s level of performance, accessabll
 The wave is an evaluation tool to ensure that there are no contrast among colors, as can be seen below the result:
 
 ![Screenshot wave test](assets/images/screenshot/screenshot-wave.png)
+
+JavaScript:
+
+- There are 17 functions in this file.
+
+- There are two largest function and 0 median
+
+- There are 13 statements with the largest function with 3 median statements.
+
+- The most complex function called gameFunction because it handle the main logic of the game and it handle and checking for the end game.
 
 # Technologies utilized
 
